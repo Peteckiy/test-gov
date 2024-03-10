@@ -1,0 +1,47 @@
+.toggle-box {
+    display: none;
+  }
+  .toggle-box + label{
+    display: block;
+    width: 30%;
+  }
+  .toggle-box + label + div{
+    display: none;
+  }
+  .toggle-box:checked + label + div {
+    display: block; 
+    padding-right: 20px; 
+  }
+  /* demo position */
+  .demo {
+    position: relative;
+    border: 1px solid #FF6F1E;
+    margin: 5% 10%;
+    background: rgba(68, 68, 68, 0.4);
+  }
+  .her::after{
+    content: "";
+    position: absolute;
+    left: 428px;
+    top: 8px;
+    border: 6px solid;
+    transform: rotate(-45deg);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  #identifier-1:checked~.her::after{
+    content: "";
+    left: 99%;
+    top: 70%;
+    border: 6px solid;
+    transform: rotate(135deg);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  
+  .her{
+    white-space: nowrap;
+    padding-right: 150px;
+  } 
